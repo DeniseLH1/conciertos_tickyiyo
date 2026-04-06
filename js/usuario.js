@@ -237,7 +237,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (filtroCategoria) filtroCategoria.addEventListener('change', dibujarEventos);
 });
 document.addEventListener('DOMContentLoaded', () => {
-    // Es vital llamar a inicializar aquí también por si el usuario
     const existentes = JSON.parse(localStorage.getItem('eventos'));
     if (!existentes || existentes.length === 0) {
         const semilla = [{
@@ -259,7 +258,6 @@ function cargarCategoriasDinamicas() {
 
     const categoriasGuardadas = JSON.parse(localStorage.getItem('categorias')) || [];
 
-    // Limpiamos y dejamos la opción por defecto
     filtroSelect.innerHTML = '<option value="">Todas las Categorías</option>';
 
     // Creamos una opción por cada categoría guardada
@@ -271,7 +269,7 @@ function cargarCategoriasDinamicas() {
     });
 }
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Inicializar categorías si están vacías (Semilla)
+    // 1. Inicializar categorías si están vacías 
     if (!localStorage.getItem('categorias')) {
         const catSemilla = [
             { id: 1, nombre: 'Conciertos', descripcion: 'Eventos musicales en vivo de todos los géneros.' },
@@ -284,10 +282,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. Cargar el menú desplegable de filtros
     cargarCategoriasDinamicas();
 
-    // 3. Dibujar los eventos (como ya lo tenías)
+    // 3. Dibujar los eventos 
     dibujarEventos();
 });
-
 
 
 // buzon
