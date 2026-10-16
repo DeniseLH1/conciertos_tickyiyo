@@ -1,4 +1,4 @@
-##Tickyiyo
+### Tickyiyo ###
 
 ## Descripción
 **Tickyiyo** es una plataforma web moderna e interactiva diseñada específicamente para la venta y gestión de tiquets para diversos eventos, conciertos y funciones. Cuenta con un sistema de inicio de sesión seguro, una interfaz visual optimizada con una paleta de colores profesional en tonos verdes y una experiencia de usuario fluida desarrollada con HTML5, CSS3 y JavaScript.
